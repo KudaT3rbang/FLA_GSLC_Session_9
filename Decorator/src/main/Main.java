@@ -7,8 +7,8 @@ public class Main {
         
         // Apply Buff Logic
 		// Fighter base attack stat = 25
-		// Frostbite wraps Fighter -> 25 * 2.05 = 51.25 = 51
-		// Bloodlust wraps Frostbite -> 51 * 1.1 = 56.1 = 56
+		// Bloodlust wraps Fighter -> 25 * 2.05 = 51.25 = 51
+		// Frostbite wraps Fighter -> 51 * 1.1 = 56.1 = 56
         fighter = new BloodLustBuff(fighter);
         fighter = new FrostbiteBuff(fighter);
 
