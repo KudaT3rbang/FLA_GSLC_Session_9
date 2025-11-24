@@ -22,7 +22,7 @@ public class Fighter implements Character {
 
 	@Override
 	public void attackEnemy() {
-		System.out.println("Fighter attacks with " + attack + " strength!");
+		System.out.println("Fighter swings their weapon!");
 	}
 
 }

@@ -22,7 +22,7 @@ public class Thief implements Character {
 
 	@Override
 	public void attackEnemy() {
-		System.out.println("Thief lands a quick strike with " + attack + " damage!");
+		System.out.println("Thief lands a quick strike!");
 	}
 
 }

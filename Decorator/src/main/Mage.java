@@ -22,7 +22,7 @@ public class Mage implements Character {
 
 	@Override
 	public void attackEnemy() {
-		System.out.println("Mage casts a spell with " + attack + " damage!");
+		System.out.println("Mage casts a fire spell!");
 	}
 
 }
