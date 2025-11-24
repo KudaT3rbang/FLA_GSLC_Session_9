@@ -2,28 +2,20 @@ package main;
 
 public class Main {
 
-	public static void printStats(Character c) {
-		System.out.println("Stats: [HP: " + c.getHP() + " | ATK: " + c.getAttack() + " | DEF: " + c.getDefense() + "]");
-	}
-
 	public static void main(String[] args) {
-		Character myFighter = new Fighter();
-		printStats(myFighter);
-		myFighter.attackEnemy();
+		Character fighter = new Fighter();
 
-		myFighter = new AttackBuff(myFighter);
-		printStats(myFighter);
-		myFighter.attackEnemy();
+		fighter = new FrostbiteBuff(fighter);
+		fighter = new SuckerPunchBuff(fighter);
 
-		printStats(myFighter);
-		myFighter.attackEnemy();
+		System.out.println("Combat Log");
+		fighter.attackEnemy();
 
-		Character myMage = new Mage();
-		myMage = new ManaBuff(myMage);
-		myMage = new HealthBuff(myMage);
-
-		printStats(myMage);
-		myMage.attackEnemy();
+		System.out.println("\nDamage Calculation");
+		// Base: 25
+		// Frostbite: 25 * 1.1 = 27
+		// SuckerPunch: 27 + 10 = 37
+		System.out.println("Total Damage Dealt: " + fighter.getAttack());
 	}
 
 }

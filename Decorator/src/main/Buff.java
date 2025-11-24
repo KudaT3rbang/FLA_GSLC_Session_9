@@ -1,7 +1,7 @@
 package main;
 
 public class Buff implements Character {
-	private Character character;
+	protected Character character;
 
 	public Buff(Character character) {
 		this.character = character;
